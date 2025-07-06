@@ -1,0 +1,27 @@
+spring.application.name=removebg
+
+# Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/removebgdb
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+
+spring.jpa.hibernate.ddl-auto=update
+
+# Disable default Spring Boot security login
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+
+# Clerk Configuration
+clerk.issuer=YOUR_CLERK_ISSUER
+clerk.jwks-url=YOUR_CLERK_JWKS_URL
+clerk.webhook.secret=YOUR_CLERK_WEBHOOK_SECRET
+
+# Clipdrop API
+clipdrop.apikey=YOUR_CLIPDROP_API_KEY
+
+# Razorpay Configuration
+razorpay.key.id=YOUR_RAZORPAY_KEY_ID
+razorpay.key.secret=YOUR_RAZORPAY_KEY_SECRET
+
+# File upload limits
+spring.servlet.multipart.max-file-size=30MB
+spring.servlet.multipart.max-request-size=30MB
